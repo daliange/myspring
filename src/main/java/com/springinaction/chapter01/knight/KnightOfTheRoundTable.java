@@ -9,6 +9,11 @@ public class KnightOfTheRoundTable implements Knight {
     this.name = name;
   }
   
+  public KnightOfTheRoundTable(String name,Quest quest) {
+	    this.name = name;
+	    this.quest = quest;
+	  }
+  
   public Object embarkOnQuest() throws QuestFailedException {
     return quest.embark();
   }

@@ -1,7 +1,9 @@
-package com.springinaction.chapter01.knight;
+package com.springinaction.chapter01.knight.test;
 
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+import com.springinaction.chapter01.knight.Knight;
 
 public class KnightApp {
   public static void main(String[] args) throws Exception {
