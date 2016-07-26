@@ -1,10 +1,12 @@
-package com.springinaction.chapter01.hello;
+package com.springinaction.chapter01.hello.test;
 
 
 import org.apache.log4j.Logger;
 import org.springframework.beans.factory.BeanFactory;
 import org.springframework.beans.factory.xml.XmlBeanFactory;
 import org.springframework.core.io.ClassPathResource;
+
+import com.springinaction.chapter01.hello.GreetingService;
 
 public class HelloApp {
 	
