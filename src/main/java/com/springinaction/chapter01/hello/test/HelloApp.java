@@ -14,7 +14,8 @@ public class HelloApp {
 	
   public static void main(String[] args) throws Exception {
     BeanFactory factory = 
-        new XmlBeanFactory(new ClassPathResource("hello.xml"));
+        //new XmlBeanFactory(new ClassPathResource("com.springinaction.chapter01.hello.hello.xml"));
+    	new XmlBeanFactory(new ClassPathResource("com/springinaction/chapter01/hello/hello.xml"));
     
     // 记录debug级别的信息  
     logger.debug("This is debug message.");  
