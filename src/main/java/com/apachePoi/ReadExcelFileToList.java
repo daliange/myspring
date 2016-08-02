@@ -38,6 +38,8 @@ public class ReadExcelFileToList {
 
 			// Get the number of sheets in the xlsx file
 			int numberOfSheets = workbook.getNumberOfSheets();
+			
+			System.out.println("numberOfSheets="+numberOfSheets);
 
 			// loop through each of the sheets
 			for (int i = 0; i < numberOfSheets; i++) {
