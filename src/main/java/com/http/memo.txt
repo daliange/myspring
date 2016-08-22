@@ -1,0 +1,2 @@
+http://www.cnblogs.com/java-pan/archive/2012/02/26/httpclient-post-get.html
+
