@@ -100,8 +100,8 @@ public class HttpURLConnectionTest {
     }
    
     public static void main(String[] args) {
-        httpURLConectionGET();
-        //httpURLConnectionPOST();
+        //httpURLConectionGET();
+        httpURLConnectionPOST();
     }
 }
 
