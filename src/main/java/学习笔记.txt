@@ -6,3 +6,20 @@ git是个好东西，可以提交到本地仓库，联网之后再提交到远�
 
 
 maven是个好东西，有了maven仓库之后，本地不需要下载那么多jar包
+
+
+需要学习的东西
+git目前掌握这个程度，马马虎虎
+maven掌握程度马马虎虎
+jdbc的使用
+hibernate的使用
+hibernate的事务管理
+spring mvc的使用
+spring ioc的使用
+spring 的事务管理
+mongodb
+redis
+mq
+网络方面相关知识
+oracle 比较欠缺
+sql语句还可以
