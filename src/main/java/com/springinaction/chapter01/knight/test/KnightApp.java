@@ -9,7 +9,7 @@ public class KnightApp {
   public static void main(String[] args) throws Exception {
     ApplicationContext ctx = 
       new ClassPathXmlApplicationContext(
-          "knight.xml");
+          "com/springinaction/chapter01/knight/knight.xml");
 
     Knight knight =
         (Knight) ctx.getBean("knight");

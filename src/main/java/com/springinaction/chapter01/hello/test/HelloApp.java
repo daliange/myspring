@@ -1,4 +1,4 @@
-package com.springinaction.chapter01.hello;
+package com.springinaction.chapter01.hello.test;
 
 
 import org.apache.log4j.Logger;
@@ -6,13 +6,16 @@ import org.springframework.beans.factory.BeanFactory;
 import org.springframework.beans.factory.xml.XmlBeanFactory;
 import org.springframework.core.io.ClassPathResource;
 
+import com.springinaction.chapter01.hello.GreetingService;
+
 public class HelloApp {
 	
 	private static Logger logger = Logger.getLogger(HelloApp.class);  
 	
   public static void main(String[] args) throws Exception {
     BeanFactory factory = 
-        new XmlBeanFactory(new ClassPathResource("hello.xml"));
+        //new XmlBeanFactory(new ClassPathResource("com.springinaction.chapter01.hello.hello.xml"));
+    	new XmlBeanFactory(new ClassPathResource("com/springinaction/chapter01/hello/hello.xml"));
     
     // 记录debug级别的信息  
     logger.debug("This is debug message.");  
