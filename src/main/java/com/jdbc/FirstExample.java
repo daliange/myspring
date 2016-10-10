@@ -42,9 +42,9 @@ public class FirstExample {
 
          //Display values
          System.out.print("ID: " + id);
-         System.out.print(", Age: " + age);
          System.out.print(", First: " + first);
-         System.out.println(", Last: " + last);
+         System.out.print(", Last: " + last);
+         System.out.println(", Age: " + age);
       }
       //STEP 6: Clean-up environment
       rs.close();
