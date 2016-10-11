@@ -1,0 +1,4 @@
+
+PreparedStatement中二者区别？？？
+execute
+executeUpdate

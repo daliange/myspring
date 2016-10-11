@@ -13,8 +13,12 @@ public class FirstExample {
    static final String PASS = "daliange";
    
    public static void main(String[] args) {
+	   
    Connection conn = null;
+   PreparedStatement pstmt = null;
    Statement stmt = null;
+   String sql = null;
+   
    try{
       //STEP 2: Register JDBC driver
       Class.forName("com.mysql.jdbc.Driver");
@@ -25,11 +29,32 @@ public class FirstExample {
 
       //STEP 4: Execute a query
       System.out.println("Creating statement...");
-      stmt = conn.createStatement();
-      String sql;
-      sql = "insert into Employees (id, first, last, age) values (1,2,3,4)";
-      stmt.executeUpdate(sql);
+      
+      
+      /*delete删除*/
+      sql = "delete from Employees";
+      pstmt = (PreparedStatement) conn.prepareStatement(sql);
+      pstmt.execute();
+      
+      /*insert插入*/
+      sql = "insert into Employees (id, first, last, age) values (?,?,?,?)";
+      pstmt = (PreparedStatement) conn.prepareStatement(sql);
+      pstmt.setInt(1, 1);
+      pstmt.setInt(2, 2);
+      pstmt.setInt(3, 3);
+      pstmt.setInt(4, 4);
+      pstmt.executeUpdate();
+      
+      /*update更新*/
+      sql = "update Employees set first=?,last=?";
+      pstmt = (PreparedStatement) conn.prepareStatement(sql);
+      pstmt.setString(1, "a");
+      pstmt.setString(2, "b");
+      pstmt.executeUpdate();
+      
+      /*select查询*/
       sql = "SELECT id, first, last, age FROM Employees";
+      stmt = conn.createStatement();
       ResultSet rs = stmt.executeQuery(sql);
 
       //STEP 5: Extract data from result set
