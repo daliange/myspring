@@ -1,2 +1,6 @@
 git忽略文件
 右键/team/ignore
+
+
+spring in action源码
+git上建立一个分支，在别的分支上面进行修改
