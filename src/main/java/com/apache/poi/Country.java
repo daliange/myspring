@@ -1,4 +1,4 @@
-package com.apachePoi;
+package com.apache.poi;
 
 public class Country {
 

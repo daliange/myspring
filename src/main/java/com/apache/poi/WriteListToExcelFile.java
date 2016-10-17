@@ -1,4 +1,4 @@
-package com.apachePoi;
+package com.apache.poi;
 
 import java.io.FileOutputStream;
 import java.util.Iterator;
